@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML</title>
+</head>
+<body>
+    <div>
+        <h1>Listas</h1>
+        <pre><h2>Ordenada</h2>
+&ltul&gt
+    &ltli&gtItem 1&lt/li&gt
+    &ltli&gtItem 2&lt/li&gt
+    &ltli&gtItem 3&lt/li&gt
+&lt/ul&gt
+        </pre>
+        <pre><h2>Não Ordenada</h2>
+&ltol&gt
+    &ltli&gtItem 1&lt/li&gt
+    &ltli&gtItem 2&lt/li&gt
+    &ltli&gtItem 3&lt/li&gt
+&lt/ol&gt
+        </pre>
+        <pre><h2>De Definição</h2>
+&ltdl&gt
+    &ltdt&gtTermo 1&lt/dt&gt
+    &ltdd&gtDefinição do termo 1&lt/dd&gt
+    &ltdt&gtTermo 2&lt/dt&gt
+    &ltdd&gtDefinição do termo 2&lt/dd&gt
+&lt/dl&gt
+        </pre>
+    </div>
+    
+    <div>
+        <h1>CSS de Listas</h1>
+        <ul>
+            <li>list-style-type
+                <ul>
+                    <li style="list-style: none;">none</li>
+                    <li style="list-style: disc;">disc</li>
+                    <li style="list-style: circle;">circle</li>
+                    <li style="list-style: square;">square</li>
+                    <li style="list-style: decimal;">decimal</li>
+                    <li style="list-style: decimal-leading-zero;">decimal-leading-zero</li>
+                    <li style="list-style: lower-roman;">lower-roman</li>
+                    <li style="list-style: upper-roman;">upper-roman</li>
+                    <li style="list-style: lower-alpha;">lower-alpha</li>
+                    <li style="list-style: upper-alpha;">upper-alpha.</li>
+                    <li>greek - α, β, γ...</li>
+                </ul>
+            </li>
+            <li>list-style-image: url("imagem.png")</li>
+            <li>list-style-position
+                <ul>
+                    <li style="list-style-position: inside;">inside</li>
+                    <li style="list-style-position: outside;">outside</li>
+                </ul>
+            </li>
+            <li>list-style: 
+                <ul>
+                    <li>url('imagens/check.gif') outside</li>
+                    <li>upper-roman inside</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Tipos de Seletores</h1>
+        <pre>Classe = .nome-da-classe || class="nome-da-classe"</pre>
+        <pre>  ID   =    #nome-do-id  ||    id="nome-do-id"</pre>
+    </div>
+    
+    <div>
+        <h1>Agrupamento</h1>
+        <p>.classe.outra - Aplica estilos a elementos que possuem ambas as classes</p>
+        <p>.classe .outra - Aplica estilos a elementos que são descendentes da classe</p>
+        <p>.classe, .outra - Aplica estilos a elementos que possuem qualquer uma das classes</p>
+
+        <h1>Tabelas</h1>
+        <pre>
+&lttable&gt
+    &ltcaption&gtMédia da turma&lt/caption&gt //título
+    &lttr&gt //linha da tabela
+        &ltth&gtCabeçalho 1&lt/th&gt //cabeçalho da tabela
+        &ltth&gtCabeçalho 2&lt/th&gt
+        &ltth&gtCabeçalho 3&lt/th&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtDado 1&lt/td&gt //dado da tabela
+        &lttd colspan="3"&gtDado 2&lt/td&gt //ocupa 3 colunas
+        &lttd rowspan="2"&gtDado 3&lt/td&gt //ocupa 2 linhas
+    &lt/tr&gt
+    &ltthead&gt&lt/thead&gt //grupo de cabeçalhos da tabela
+    &lttbody&gt&lt/tbody&gt //grupo de corpo da tabela
+    &lttfoot&gt&lt/tfoot&gt //grupo de rodapés da tabela
+&lt/table&gt
+        </pre>
+    </div>
+
+    <div>
+        <h1>Imagens</h1>
+        <ul>
+            <li>Tipos
+                <ol>
+                    <li>JPEG - Formato de imagem com compressão com perdas, ideal para fotografias e imagens com muitos detalhes.</li>
+                    <li>PNG - Formato de imagem sem perdas, suporta transparência e é ideal para gráficos, logotipos e imagens com áreas transparentes.</li>
+                    <li>GIF - Formato de imagem com suporte a animação, mas limitado a 256 cores. Ideal para gráficos simples e animações curtas.</li>
+                    <li>SVG - Formato de imagem vetorial que pode ser redimensionado sem perda de qualidade. Ideal para logotipos, ícones e gráficos que precisam ser escalados.</li>
+                    <li>WEBP - Formato de imagem moderno com compressão com e sem perdas, oferece melhor qualidade e menor tamanho de arquivo.</li>
+                </ol>
+            </li>
+            <li>Exemplo
+                <pre>&ltimg src="imagem.jpg" alt="Descrição da imagem"&gt</pre>
+            </li>
+            <li>Customização
+                <ul>
+                    <li>&ltimg src="imagem.jpg" alt="Descrição da imagem" height="200"&gt</li>
+                    <li>&ltimg src="imagem.jpg" alt="Descrição da imagem" width="300"&gt</li>
+                </ul>
+            </li>
+            <li>Estilos
+                <ul>
+                    <li>vertical-align
+                        <ul>
+                            <li>top - o topo da imagem alinha com a linha top.</li>
+                            <li>text-top - O topo da imagem alinha com a linha text-top.</li>
+                            <li>baseline - Este é o alinhamento padrão.</li>
+                            <li>middle - O ponto médio da imagem alinha com a linha baseline.</li>
+                            <li>text-bottom - A parte inferior da imagem alinha com a linha text-bottom.</li>
+                            <li>bottom - A parte inferior da imagem alinha com a linha bottom.</li>
+                            <li>sub - A parte inferior da imagem alinha com a linha baseline do conteúdo subscrito (ainda que não haja subscrito no texto).</li>
+                            <li>super - A parte inferior da imagem alinha com a linha baseline do conteúdo sobrescrito (ainda que não haja sobrescrito no texto).</li>
+                        </ul>
+                    </li>
+                    <li>opacity (transparencia): 0 (transparente) à 1 (visível)</li>
+                    <li>background-image: url("imagem.png")</li>
+                            <li>Sub Propriedades:
+                                <ul>
+                                    <li>background-repeat (repetição da imagem de fundo)
+                                        <ul>
+                                            <li>repeat (repetir a imagem tanto horizontal quanto verticalmente)</li>
+                                            <li>repeat-x (repetir a imagem apenas horizontalmente)</li>
+                                            <li>repeat-y (repetir a imagem apenas verticalmente)</li>
+                                            <li>no-repeat (não repetir a imagem)</li>
+                                        </ul>
+                                    </li>
+                                    <li>background-attachment (fixação da imagem de fundo)
+                                        <ul>
+                                            <li>scroll (a imagem de fundo rola com o conteúdo)</li>
+                                            <li>fixed (a imagem de fundo fica fixa em relação à janela de visualização)</li>
+                                            <li>local (a imagem de fundo rola com o elemento)</li>
+                                        </ul>
+                                    </li>
+                                    <li>background-position (posição da imagem de fundo)
+                                        <ul>
+                                            <li>top left (canto superior esquerdo)</li>
+                                            <li>top center (canto superior central)</li>
+                                            <li>top right (canto superior direito)</li>
+                                            <li>center left (centro esquerdo)</li>
+                                            <li>center center (centro central)</li>
+                                            <li>center right (centro direito)</li>
+                                            <li>bottom left (canto inferior esquerdo)</li>
+                                            <li>bottom center (canto inferior central)</li>
+                                            <li>bottom right (canto inferior direito)</li>
+                                            <li>30px 20px (especificar posição horizontal e vertical)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <pre>
+&ltfigure&gt
+    &ltfigcaption&gtGráfico: Média da turma&lt/figcaption&gt
+    &ltimg src="grafico.png" alt="Média da turma"/&gt
+&lt/figure&gt
+        </pre>
+    </div>
+</body>
+</html>

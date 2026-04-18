@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS - 1</title>
+</head>
+<body>
+    <div>
+        <h1>O que é CSS?</h1>
+        <p>CSS (Cascading Style Sheets) é uma linguagem de estilização utilizada para definir a apresentação de elementos HTML em uma página web.</p>
+
+        <h1>Tipos de CSS</h1>
+        <ul>
+            <li>CSS Incorporado
+                <ul>
+                    <li>
+                        <pre>&ltstyle&gt&lt/style&gt</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>CSS Importado
+                <ul>
+                    <li>
+                        <pre>&ltlink rel="stylesheet" href="#"&gt</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>CSS Inline
+                <ul>
+                    <li>
+                        <pre>&ltp style="color: red;"&gtTexto&lt/p&gt</pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Valores</h1>
+        <ul>
+            <li>Valores Absolutos
+                <ul>
+                    <li>cm (centimeters)</li>
+                    <li>mm (millimeters)</li>
+                    <li>in (inches)</li>
+                    <li>pt (points)</li>
+                </ul>
+            </li>
+            <li>Valores Relativos
+                <ul>
+                    <li>em (unidades relativas ao tamanho da fonte)</li>
+                    <li>ex (unidades relativas à altura x da fonte)</li>
+                    <li>px (pixels)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Fontes</h1>
+        <ul>
+            <li>font-size
+                <ul>
+                    <li>xx-small, x-small, small</li>
+                    <li>medium</li>
+                    <li>large, x-large, xx-large</li>
+                </ul>
+            </li>
+            <li>font-family
+                <ul>
+                    <li class="arial">Arial</li>
+                    <li class="cursive">Cursive</li>
+                    <li class="serif">Serif</li>
+                    <li class="sans-serif">Sans-serif</li>
+                    <li class="monospace">Monospace</li>
+                </ul>
+            </li>
+            <li>font-style
+                <ul>
+                    <li class="font-normal">normal</li>
+                    <li class="font-italic">italic</li>
+                    <li class="font-oblique">oblique</li>
+                </ul>
+            </li>
+            <li>font-weight
+                <ul>
+                    <li class="weight-normal">normal</li>
+                    <li class="weight-bold">bold</li>   
+                    <li class="weight-bolder">bolder</li>
+                    <li class="weight-lighter">lighter</li>
+                    <li class="weight-100">100</li>
+                    <li class="weight-200">200</li>
+                    <li class="weight-300">300</li>
+                    <li class="weight-400">400</li>
+                    <li class="weight-500">500</li>
+                    <li class="weight-600">600</li>
+                    <li class="weight-700">700</li>
+                    <li class="weight-800">800</li>
+                    <li class="weight-900">900</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Texto</h1>
+        <ul>
+            <li>Alinhamento
+                <ul>
+                    <li>text-align
+                        <ul>
+                            <li>left, right, center, justify</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Decoração
+                <ul>
+                    <li>text-decoration
+                        <ul style="display: flex; flex-direction: column; gap: 5px;">
+                            <li class="text-none">none</li>
+                            <li class="text-underline">underline</li>
+                            <li class="text-overline">overline</li>
+                            <li class="text-line-through">line-through</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Transformação
+                <ul>
+                    <li>text-transform
+                        <ul>
+                            <li class="text-trans-none">none</li>
+                            <li class="text-trans-capitalize">capitalize</li>
+                            <li class="text-trans-uppercase">uppercase</li>
+                            <li class="text-trans-lowercase">lowercase</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Outros
+                <ul>
+                    <li>letter-spacing (espaçamento entre letras)</li>
+                    <li>line-height (altura da linha)</li>
+                    <li>text-indent (recuo de parágrafo)</li>
+                    <li>direction (direção do texto)
+                        <ul>
+                            <li>ltr (da esquerda para a direita)</li>
+                            <li>rtl (da direita para a esquerda)</li>
+                        </ul>
+                    </li>
+                    <li>color (cor do texto)</li>
+                </ul>
+            </li>
+            <li>Sombra
+                <ul>
+                    <li>text-shadow (sombra do texto)
+                        <ul>
+                            <li>text-shadow: offset-x offset-y blur-radius color;</li>
+                            <li>offset-x (sombra horizontal)</li>
+                            <li>offset-y (sombra vertical)</li>
+                            <li>blur-radius (distância da sombra)</li>
+                            <li>color (cor da sombra)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1>Espaçamento</h1>
+        <ul>
+            <li>margin (externo)
+                <ul>
+                    <li>margin-top</li>
+                    <li>margin-right</li>
+                    <li>margin-bottom</li>
+                    <li>margin-left</li>
+                </ul>
+            </li>
+            <li>padding (interno)
+                <ul>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-bottom</li>
+                    <li>padding-left</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Efeito Zebrado</h2>
+        <pre>
+        tr.zebrado:nth-child(2n+1) { //para uma classe, mas tem que aplicar
+            background: lightgray;
+        }
+        tr.zebrado:nth-child(even) { //para itens pares
+            background: lightgray;
+        }
+        tr.zebrado:nth-child(odd) { //para itens ímpares
+            background: lightgray;
+        }
+        </pre>
+    </div>
+    
+    <div>
+        <h1>Bordas</h1>
+        <ul>
+            <li>border-style
+                <ul>
+                    <li>dotted</li>
+                    <li>solid</li>
+                    <li>double</li>
+                    <li>groove</li>
+                    <li>ridge</li>
+                    <li>inset</li>
+                    <li>outset</li>
+                </ul>
+            </li>
+            <li>border-color: color</li>
+            <li>border-spacing: valor</li>
+            <li>border-radius: valor</li>
+            <li>box-shadow
+                <ul>
+                    <li>(1) posição horizontal</li>
+                    <li>(2) posição vertical</li>
+                    <li>(3) distância da sombra</li>
+                    <li>(4) cor da sombra</li>
+                </ul>
+            </li>
+            <li>border-collapse
+                <ul>
+                    <li>collapse (as bordas das células se fundem)</li>
+                    <li>separate (as bordas das células permanecem separadas)</li>
+                </ul>
+            </li>
+            <li>border: 1px solid black</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Display</h1>
+        <ul>
+            <li>block - Faz o elemento ocupar toda a largura disponível, começando em uma nova linha.</li>
+            <li>inline - Faz o elemento ser exibido em linha com outros elementos inline.</li>
+            <li>inline-block - Combina as características dos elementos block e inline.</li>
+            <li>none - Oculta o elemento e ele não ocupa espaço na página.</li>
+        </ul>
+    </div>
+</body>
+</html>

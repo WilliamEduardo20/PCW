@@ -4,6 +4,24 @@ body {
     justify-content: space-between;
 }
 
+.nav-bar {
+    width: fit-content;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    align-items: end;
+    background-color: white;
+    color: black;
+}
+.nav-bar.closed { left: -170px; }
+.nav-bar h3 { cursor: pointer; }
+.nav-bar.closed #menu-button { left: 200px; }
+.nav-bar #menu-button {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+}
+
 div { max-width: 50vw; }
 pre { margin-left: 10px;}
 

@@ -120,7 +120,7 @@ strong { color: #e67e22; }
         font-size: 0.7rem;
     }
 
-    .lista-codigo {
-        font-size: 0.6rem; /* Código um pouco menor para caber melhor */
+    pre {
+        font-size: 0.7rem; /* Código um pouco menor para caber melhor */
     }
 }

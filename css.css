@@ -119,4 +119,8 @@ strong { color: #e67e22; }
         width: 28% !important; /* Faz caber 3 por linha em vez de 10% */
         font-size: 0.7rem;
     }
+
+    .lista-codigo {
+        font-size: 0.8rem; /* Código um pouco menor para caber melhor */
+    }
 }

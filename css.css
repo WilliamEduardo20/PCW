@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.colum1, .colum2 {
+    max-width: 50%;
+    width: calc(50% - 100px);
+}
+
+.caixa-nativa {
+    border: 5px solid black;
+    border-radius: 15px; 
+    padding: 25px;
+    width: 100%;
+    margin: 20px;
+    font-family: sans-serif;
+    max-height: 100vh;
+    height: fit-content;
+}
+.caixa-nativa legend { padding: 0 10px; }
+.caixa-nativa h1 {
+    margin: 0; 
+    font-size: 1.5rem; 
+    display: inline;
+    color: #333;
+}
+.caixa-nativa p {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Ajuste das Listas */
+.lista-principal {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.lista-principal > li {
+    margin-bottom: 20px;
+    color: #333;
+}
+.lista-codigo {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+/* Estilização do Código */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    border-left: 4px solid #66d9ef;
+}
+code { font-family: 'Consolas', 'Monaco', monospace; }
+strong { color: #e67e22; }
+
+/* Media Query para Celulares e Tablets */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Ajuste do Container Principal */
+    body {
+        flex-direction: column; /* Força uma coluna única */
+        gap: 20px;              /* Diminui o espaço entre as seções */
+        padding: 10px;
+        margin: 5px;
+        width: auto;            /* Permite que o body respire */
+    }
+
+    /* 2. Ajuste das Colunas */
+    .colum1, .colum2 {
+        max-width: calc(100% - 40px);
+        width: 100%;           /* Ocupa a largura toda no mobile */
+    }
+
+    /* 3. Ajuste das Caixas (Fieldsets) */
+    .caixa-nativa {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;        /* Remove as margens laterais grandes */
+        padding: 15px;         /* Espaço interno menor para telas pequenas */
+        max-height: none;      /* Remove o limite de altura da tela */
+        height: auto;
+    }
+
+    /* 4. CORREÇÃO CRÍTICA: Anular os estilos inline do HTML */
+    /* Isso impede que o texto saia para fora da caixa no mobile */
+    .lista-principal {
+        height: auto !important;         /* Ignora o height: 355px do HTML */
+        flex-direction: column !important; /* Para de tentar fazer colunas internas */
+        flex-wrap: nowrap !important;
+    }
+
+    .caixa-nativa h1 {
+        font-size: 1.2rem; /* Título um pouco menor para não quebrar linha */
+    }
+
+    /* Ajuste para as caixinhas de bordas caberem melhor */
+    .lista-principal ul[style*="display: flex"] {
+        justify-content: center;
+        gap: 5px !important;
+    }
+
+    .border-box {
+        width: 28% !important; /* Faz caber 3 por linha em vez de 10% */
+        font-size: 0.7rem;
+    }
+}

@@ -25,7 +25,6 @@ body {
     width: 100%;
     margin: 20px;
     font-family: sans-serif;
-    max-height: 100vh;
     height: fit-content;
 }
 .caixa-nativa legend { padding: 0 10px; }

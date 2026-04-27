@@ -1,0 +1,173 @@
+/* Resets e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para evitar que padding/borda quebrem o tamanho */
+}
+
+body {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Reduzido de 100px para evitar quebra prematura, mas ajustável */
+    justify-content: space-between;
+}
+
+.colum1, .colum2 {
+    width: calc(50% - 25px); /* Ajustado para acompanhar o gap */
+}
+
+/* Estilização das Caixas (Fieldsets) */
+.caixa-nativa {
+    border: 5px solid black;
+    border-radius: 15px; 
+    padding: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    height: fit-content;
+}
+
+.caixa-nativa legend { 
+    padding: 0 10px; 
+}
+
+.caixa-nativa h1 {
+    margin: 0 0 15px 0; 
+    font-size: 1.5rem; 
+    color: #333;
+    display: block;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.caixa-nativa h2 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.caixa-nativa p {
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Restaura o recuo das listas para os marcadores não vazarem da borda */
+.caixa-nativa ul, 
+.caixa-nativa ol {
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+/* Garante que sub-listas tenham espaçamento correto */
+.caixa-nativa ul ul, 
+.caixa-nativa ol ol,
+.caixa-nativa ul ol,
+.caixa-nativa ol ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Espaçamento entre os itens da lista para ficar mais legível */
+.caixa-nativa li {
+    margin-bottom: 5px;
+}
+
+/* Ajuste das Listas */
+.lista-principal {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.lista-principal > li {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Classes Novas para substituir o style inline do HTML */
+.lista-tipos-imagem {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+.lista-interna {
+    list-style-position: inside;
+    margin-top: 5px;
+}
+
+/* Classes para demonstração dos tipos de lista (substituindo style inline) */
+.ex-none { list-style: none; }
+.ex-disc { list-style: disc; }
+.ex-circle { list-style: circle; }
+.ex-square { list-style: square; }
+.ex-decimal { list-style: decimal; }
+.ex-decimal-zero { list-style: decimal-leading-zero; }
+.ex-lower-roman { list-style: lower-roman; }
+.ex-upper-roman { list-style: upper-roman; }
+.ex-lower-alpha { list-style: lower-alpha; }
+.ex-upper-alpha { list-style: upper-alpha; }
+.ex-inside { list-style-position: inside; }
+.ex-outside { list-style-position: outside; }
+
+/* Estilização do Código */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    border-left: 4px solid #66d9ef;
+    margin-bottom: 15px;
+}
+
+code { font-family: 'Consolas', 'Monaco', monospace; }
+strong { color: #e67e22; }
+
+/* Media Query para Celulares e Tablets */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column; 
+        gap: 20px;              
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .colum1, .colum2 {
+        width: 100%;           
+    }
+
+    .caixa-nativa {
+        margin: 10px 0;        
+        padding: 15px;         
+    }
+
+    /* Como tiramos os estilos inline do HTML, agora o CSS funciona naturalmente sem precisar de !important */
+    .lista-principal {
+        flex-direction: column; 
+        flex-wrap: nowrap;
+    }
+
+    .caixa-nativa h1 {
+        font-size: 1.3rem; 
+    }
+
+    .lista-tipos-imagem {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    pre {
+        font-size: 0.8rem; 
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <title>HTML e CSS Ajustado</title>
+</head>
+<body>
+    <section class="colum1">
+        <fieldset class="caixa-nativa">
+            <h1>Listas</h1>
+            <h2>Ordenada</h2>
+            <pre>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <h2>Não Ordenada</h2>
+            <pre>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</pre>
+            <h2>De Definição</h2>
+            <pre>&lt;dl&gt;
+    &lt;dt&gt;Termo 1&lt;/dt&gt;
+    &lt;dd&gt;Definição do termo 1&lt;/dd&gt;
+    &lt;dt&gt;Termo 2&lt;/dt&gt;
+    &lt;dd&gt;Definição do termo 2&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+        </fieldset>
+
+        <fieldset class="caixa-nativa">
+            <h1>CSS de Listas</h1>
+            <ul>
+                <li>list-style-type
+                    <ul>
+                        <li class="ex-none">none</li>
+                        <li class="ex-disc">disc</li>
+                        <li class="ex-circle">circle</li>
+                        <li class="ex-square">square</li>
+                        <li class="ex-decimal">decimal</li>
+                        <li class="ex-decimal-zero">decimal-leading-zero</li>
+                        <li class="ex-lower-roman">lower-roman</li>
+                        <li class="ex-upper-roman">upper-roman</li>
+                        <li class="ex-lower-alpha">lower-alpha</li>
+                        <li class="ex-upper-alpha">upper-alpha.</li>
+                        <li>greek - α, β, γ...</li>
+                    </ul>
+                </li>
+                <li>list-style-image: url("imagem.png")</li>
+                <li>list-style-position
+                    <ul>
+                        <li class="ex-inside">inside</li>
+                        <li class="ex-outside">outside</li>
+                    </ul>
+                </li>
+                <li>list-style: 
+                    <ul>
+                        <li>url('imagens/check.gif') outside</li>
+                        <li>upper-roman inside</li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="caixa-nativa">
+            <h1>Tabelas</h1>
+            <pre>&lt;table&gt;
+    &lt;caption&gt;Média da turma&lt;/caption&gt; //título
+    &lt;tr&gt; //linha da tabela
+        &lt;th&gt;Cabeçalho 1&lt;/th&gt; //cabeçalho da tabela
+        &lt;th&gt;Cabeçalho 2&lt;/th&gt;
+        &lt;th&gt;Cabeçalho 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dado 1&lt;/td&gt; //dado da tabela
+        &lt;td colspan="3"&gt;Dado 2&lt;/td&gt; //ocupa 3 colunas
+        &lt;td rowspan="2"&gt;Dado 3&lt;/td&gt; //ocupa 2 linhas
+    &lt;/tr&gt;
+    &lt;thead&gt;&lt;/thead&gt; //grupo de cabeçalhos da tabela
+    &lt;tbody&gt;&lt;/tbody&gt; //grupo de corpo da tabela
+    &lt;tfoot&gt;&lt;/tfoot&gt; //grupo de rodapés da tabela
+&lt;/table&gt;</pre>
+        </fieldset>
+    </section>
+
+    <section class="colum2">
+        <fieldset class="caixa-nativa">
+            <h1>Tipos de Seletores</h1>
+            <pre>Classe = .nome-da-classe || class="nome-da-classe"</pre>
+            <br>
+            <pre>  ID   =    #nome-do-id  ||    id="nome-do-id"</pre>
+        </fieldset>
+
+        <fieldset class="caixa-nativa">
+            <h1>Agrupamento</h1>
+            <p>.classe.outra - Aplica estilos a elementos que possuem ambas as classes</p>
+            <p>.classe .outra - Aplica estilos a elementos que são descendentes da classe</p>
+            <p>.classe, .outra - Aplica estilos a elementos que possuem qualquer uma das classes</p>
+        </fieldset>
+
+        <fieldset class="caixa-nativa">
+            <h1>Imagens</h1>
+            <ul class="lista-principal">
+                <li>Tipos
+                    <ol class="lista-tipos-imagem">
+                        <li>JPEG - Formato com compressão com perdas, ideal para fotos e imagens com muitos detalhes.</li>
+                        <li>PNG - Formato sem perdas, suporta transparência. Ideal para gráficos e logotipos.</li>
+                        <li>GIF - Suporta animação, limitado a 256 cores. Ideal para animações curtas.</li>
+                        <li>SVG - Imagem vetorial redimensionável sem perda de qualidade. Ideal para ícones.</li>
+                        <li>WEBP - Formato moderno com alta compressão, oferece melhor qualidade e menor tamanho.</li>
+                    </ol>
+                </li>
+                <li>Exemplo
+                    <pre>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</pre>
+                </li>
+                <li>Customização
+                    <ul class="lista-interna">
+                        <li>&lt;img src="imagem.jpg" alt="Descrição da imagem" height="200"&gt;</li>
+                        <li>&lt;img src="imagem.jpg" alt="Descrição da imagem" width="300"&gt;</li>
+                    </ul>
+                </li>
+                <li>Estilos
+                    <ul class="lista-interna">
+                        <li>vertical-align
+                            <ul style="list-style-position: inside;">
+                                <li>top - o topo da imagem alinha com a linha top.</li>
+                                <li>text-top - O topo da imagem alinha com a linha text-top.</li>
+                                <li>baseline - Este é o alinhamento padrão.</li>
+                                <li>middle - O ponto médio da imagem alinha com a linha baseline.</li>
+                                <li>text-bottom - A parte inferior da imagem alinha com a linha text-bottom.</li>
+                                <li>bottom - A parte inferior da imagem alinha com a linha bottom.</li>
+                            </ul>
+                        </li>
+                        <li>opacity (transparencia): 0 (transparente) a 1 (visível)</li>
+                        <li>background-image: url("imagem.png")
+                            <ul>
+                                <li>background-repeat
+                                    <ul>
+                                        <li>repeat</li>
+                                        <li>repeat-x</li>
+                                        <li>repeat-y</li>
+                                        <li>no-repeat</li>
+                                    </ul>
+                                </li>
+                                <li>background-attachment
+                                    <ul>
+                                        <li>scroll</li>
+                                        <li>fixed</li>
+                                        <li>local</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <pre>&lt;figure&gt;
+    &lt;figcaption&gt;Gráfico: Média da turma&lt;/figcaption&gt;
+    &lt;img src="grafico.png" alt="Média da turma"/&gt;
+&lt;/figure&gt;</pre>
+        </fieldset>
+    </section>
+</body>
+</html>

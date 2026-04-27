@@ -121,6 +121,5 @@ strong { color: #e67e22; }
 
     pre {
         font-size: 0.8rem; /* Código um pouco menor para caber melhor */
-        white-space: pre-wrap;
     }
 }
